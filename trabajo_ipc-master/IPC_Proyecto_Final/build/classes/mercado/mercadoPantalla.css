@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+    
+}
+.button {
+  -fx-transition-duration: 1s;
+  -fx-background-color: transparent;
+  -fx-border-color: lightgrey;
+  -fx-text-fill: blue;
+  -fx-font-weight:bold;
+  -fx-font-style: arial;
+}
+
+.button:hover {
+  -fx-background-color: grey; /* Green */
+  -fx-text-fill: white;
+}

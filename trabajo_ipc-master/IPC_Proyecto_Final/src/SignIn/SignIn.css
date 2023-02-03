@@ -1,0 +1,18 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.button{
+    -fx-background-color: indianred;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    
+    -fx-border-radius: 5px;
+}
+
+.hbox{
+    -fx-background-color: indianred;
+    -fx-text-fill: white;
+    -fx-font-size: 30px;
+    -fx-font-weight:bold;
+}

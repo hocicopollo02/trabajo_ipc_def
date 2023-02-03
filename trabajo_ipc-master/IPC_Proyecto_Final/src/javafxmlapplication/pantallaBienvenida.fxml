@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="panel" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#seleccionar_sesion" prefHeight="600.0" prefWidth="1000.0" stylesheets="@pantallabienvenida.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.PantallaBienvenidaController">
+   <top>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Bienvenida">
+               <font>
+                  <Font size="45.0" />
+               </font></Label>
+            <HBox alignment="CENTER" style="-fx-border-color: lightgrey;">
+               <children>
+                  <Button fx:id="agricultor_button" mnemonicParsing="false" onMouseClicked="#seleccionar_sesion" prefHeight="40.0" prefWidth="100.0" text="Agricultor" textFill="#3700ff">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="cliente_button" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Cliente" textFill="#3700ff">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="username_tf" alignment="CENTER" maxWidth="300.0" promptText="username" />
+            <PasswordField fx:id="password_tf" alignment="CENTER" maxWidth="300.0" promptText="password" />
+            <Label fx:id="error_label" text="Error" textFill="#f80303" />
+            <VBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#irAMercado" styleClass="aceptar_button" text="Aceptar" />
+                  <Button fx:id="signUp_button" mnemonicParsing="false" onAction="#irASignup" styleClass="signUp_button" text="No tengo cuenta" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
